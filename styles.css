@@ -36,23 +36,25 @@ nav ul li a:hover {
 
 .container {
    /* Your content styles go here */
-   display: inline-block; /* Make each container an inline block to stack them horizontally */
+   display: grid; /* Make each container an inline block to stack them horizontally */
    justify-content: space-between; /* Distribute space between tiles */
    padding: 10px; /* Add padding around the container */
+   gap: 10px; /* Adjust the gap between tiles as needed */
+   grid-template-columns: repeat(3, 1fr); /* Create three equal-width columns */
+
 }
 
 .tile {
    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background for tiles */
    padding: 30px;
-   width: 350px;
+   width: 300px;
    height: 300px;
    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
    transition: all 0.4s ease-in-out;
    flex: 1; /* Allow tiles to grow and shrink equally within the container */
    margin-top: 25px; /* Add margin to move the tiles down */
-   margin-left: 50px; /* Add margin to move the tiles down */
-   
-
+   margin-bottom: 20px;  
+   margin-left: 50px;
 }
 
 .tile:hover {
@@ -78,7 +80,22 @@ nav ul li a:hover {
    max-width: 70px;
    height: auto;
 }
+.logo1 img{  /*used for homepage*/
+   position: fixed; /* You can also use 'absolute' if needed */
+   left: 20px; /* Adjust the left distance as needed */
+   top: 20px; /* Optional: Adjust the top distance if needed */
+   max-width: 70px;
+   height: auto;
+}
 
+.logo2 img{
+   padding: 5px;
+   left: 20px; /* Adjust the left distance as needed */
+   top: 20px; /* Optional: Adjust the top distance if needed */
+   max-width: 170px;
+   height: 100px;
+   width: 190px;
+}
 .tooltip {
    position: absolute;
    background-color: rgba(0, 0, 0, 0.7);
@@ -87,7 +104,6 @@ nav ul li a:hover {
    border-radius: 5px;
    bottom: 100%;
    left: 50%;
-   
    transform: translateX(-50%);
    opacity: 0;
    transition: opacity 0.3s ease, transform 0.3s ease; /* Add transform transition */
