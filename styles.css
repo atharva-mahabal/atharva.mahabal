@@ -32,8 +32,8 @@ body {
 
 header {
    text-align: center;
+      background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background for tiles */
    padding: 20px;
-   background-color: #333;
    color: white;
 }
 
@@ -70,10 +70,10 @@ nav ul li a:hover {
 }
 
 .tile {
-   background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background for tiles */
+   background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background for tiles */
    padding: 30px;
-   width: 300px;
-   height: 300px;
+   width: 350px;
+   height: 350px;
    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
    transition: all 0.4s ease-in-out;
    flex: 1; /* Allow tiles to grow and shrink equally within the container */
