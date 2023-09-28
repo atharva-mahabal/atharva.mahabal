@@ -11,24 +11,20 @@
       
 </head>    
 <body>
-
     <div class="background-container">
-        <video autoplay loop muted id="star-video">
-            <source src="snow1.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-         <div class="content">
-            <!-- Your website content goes here -->
         
-    <header>
+        <div class="content">
+            <!-- Your website content goes here -->
+          
+        <header>
        
-        <h1>Atharva Mahabal</h1>
-        <p>Software Developer | Experience:- 2 yeras </p>
-  <nav>
+            <h1>Atharva Mahabal</h1>
+            <p>Software Developer | Experience:- 2 yeras </p>
+         <nav>
            <ul>
-               <li><a href="aboutme.html">About Me</a></li>
-               <li><a href="portfolio.html">Portfolio</a></li>
-               <li><a href="contact.html">Contact</a></li>
+            <li><a href="#aboutme">About me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
            </ul>
        </nav>
     </header>
@@ -82,25 +78,75 @@
             <div class="tile">
                 <center>
                     <h2>Projects</h2>
-                </center>
-                <h2>BasketBliss</h2>
-                <h2>Groove Hub</h2>
-                <h2>Equipment Performing Monitoring System</h2> 
+                </center>   
+                BasketBliss<br><br>
+                Groove Hub<br><br>
+                Equipment Performing Monitoring System<br>
+            
             </div>
           <div class="tile">
         <center>
             <h2>Milestones  </h2>
+            Trimasys Control Solutions<br> May 2022- Present<br><br>
+            Indicus Software <br>Oct 2021-May 2022<br><br>
+            Master's in Computer Application 2019-2022
         </center>
-            
+       
         </div>
+     
         </div>
-    <main>
 
+    <main>
+        <div class="tile1">
+
+        <div id="aboutme">
+            <p>Hello! I'm Atharva Mahabal, a passionate software developer with 2 years of hands-on experience in creating innovative solutions. I've always been fascinated by technology and the incredible possibilities it offers, and I'm thrilled to be a part of this dynamic field.</p>
+            <p>My journey in software development began when I completed my Masters degree in Computer Application from IMCC College Pune University. Since then, I've had the privilege of working with some exceptional teams and contributing to a variety of exciting projects.</p>
+            <p>In my work, I specialize in a range of programming languages, including JavaScript, Python, and Java.In low code platforms I have worked on Thingworx and Contineo, I'm well-versed in popular frameworks like React and Node.js, and I have experience in developing web applications, APIs.</p>
+            <p>During my tenure in the industry, I've had the opportunity to work with companies like Indicus Software and Trimasys Control Solutions. Notable achievements include giving a presentation at IIT Bombay on Thingworx platform.</p>
+            <p>What truly fuels my passion for software development is the belief that it has the power to transform lives and solve real-world problems. I'm a firm believer in the importance of continuous learning, and I'm committed to staying updated with the latest industry trends and technologies.</p>
+            <p>Collaboration and teamwork are at the core of my work philosophy. I enjoy collaborating with talented designers, product managers, and fellow developers to bring creative ideas to life. It's incredible to witness how diverse perspectives can lead to groundbreaking solutions.</p>
+            <p>Outside of work, I'm an enthusiastic maker and tinkerer. I enjoy building side projects, experimenting with emerging technologies, and participating in hackathons. I also have a love for photography, which allows me to capture and appreciate the beauty in everyday life.</p>
+            <p>Currently, I'm focused on personal projects, where I'm excited to apply my skills to address [mention the problem or opportunity]. I'm always open to new opportunities and collaborations, so feel free to reach out if you'd like to connect or discuss potential projects!</p>
+         
+        </div>
+       </div>
+        
+        <div id="portfolio">
+            <br><br><br><br><br>hiii in portfolio
+        </div>
+      
+        <div id="contact">
+            <br><br><br><br><br>hiii in Contact
+        </div>
+      
     </main>
 
     <footer>
         <p>&copy; Atharva Mahabal</p>
     </footer>
     </div>
+    <script>
+        // Function to handle smooth scrolling
+        function smoothScroll(targetId) {
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        }
+    
+        // Add an event listener to the links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                smoothScroll(targetId);
+            });
+        });
+    </script>
+    
 </body>
 </html>
