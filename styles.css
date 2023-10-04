@@ -1,6 +1,6 @@
 /* styles.css */
 body {
-   background-color: rgb(150, 238, 238); /* Make the background image cover the entire viewport */
+   background-color: rgb(191, 250, 250); /* Make the background image cover the entire viewport */
     overflow: auto;
 
 }
@@ -29,7 +29,7 @@ main{
 
 header {
    text-align: center;
-      background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background for tiles */
+   background-color: rgba(255, 255, 255, 0.1); /* Fully transparent black background */
    padding: 20px;
    color: rgb(0, 0, 0);
 }
@@ -66,29 +66,103 @@ nav ul li a:hover {
 
 }
 
+.portfolio{
+   /*background-color: rgb(7, 94, 165);  Semi-transparent background for tiles */
+  
+}
+
 .tile {
-   background-color: rgba(239, 239, 239, 0.1); /* Semi-transparent background for tiles */
+   background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background for tiles */
    padding: 30px;
    width: 350px;
    height: 350px;
-   box-shadow: 5px 5px 15px rgba(6, 229, 88, 0.5);
+   box-shadow: 5px 5px 15px rgba(0, 0, 3, 0.7);
    transition: all 0.4s ease-in-out;
    flex: 1; /* Allow tiles to grow and shrink equally within the container */
    margin-top: 25px; /* Add margin to move the tiles down */
    margin-bottom: 20px;  
    margin-left: 50px;
 }
-.tile1 {
-   background-color: rgba(239, 239, 239, 0.1); /* Semi-transparent background for tiles */
+/* Style the default appearance of the hyperlinks */
+.tile a {
+   text-decoration: none; /* Remove underline */
+   color: black; /* Default text color */
+   transition: color 0.3s; /* Smooth color transition */
+}
+
+/* Change the color on hover */
+.tile a:hover {
+   color: red; /* Color changes to red on hover */
+}
+.tile1 { 
+   background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background for tiles */
    padding: 30px;
    width: 1330px;
-   height: 800px;
-   box-shadow: 5px 5px 15px rgba(6, 229, 88, 0.5);
+   height: 200px;
+   box-shadow: 5px 5px 15px rgba(6, 229, 88, 0.3);
    transition: all 0.4s ease-in-out;
    flex: 1; /* Allow tiles to grow and shrink equally within the container */
    margin-top: 25px; /* Add margin to move the tiles down */
    margin-bottom: 20px;  
    margin-left: 50px;
+}
+.project_tile1 {
+   background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background for tiles */
+   padding: 30px;
+   width: 630px;
+   height: 300px;
+   box-shadow: 5px 5px 15px rgba(6, 229, 88, 0.3);
+   transition: all 0.4s ease-in-out;
+   flex: 1; /* Allow tiles to grow and shrink equally within the container */
+   margin-top: 25px; /* Add margin to move the tiles down */
+   margin-bottom: 20px;  
+   margin-left: 50px;
+   border-radius: 105px; /* Adjust the value to control the curve radius */
+
+}
+
+.project_tile2 {
+   background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background for tiles */
+   padding: 30px;
+   width: 630px;
+   height: 300px;
+   box-shadow: 5px 5px 15px rgba(6, 229, 88, 0.3);
+   transition: all 0.4s ease-in-out;
+   flex: 1; /* Allow tiles to grow and shrink equally within the container */
+   margin-top: 25px; /* Add margin to move the tiles down */
+   margin-bottom: 20px;  
+   margin-left: 780px;
+   border-radius: 105px; /* Adjust the value to control the curve radius */
+
+}
+
+.project_tile3 {
+   background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background for tiles */
+   padding: 30px;
+   width: 630px;
+   height: 300px;
+   box-shadow: 5px 5px 15px rgba(6, 229, 88, 0.3);
+   transition: all 0.4s ease-in-out;
+   flex: 1; /* Allow tiles to grow and shrink equally within the container */
+   margin-top: 25px; /* Add margin to move the tiles down */
+   margin-bottom: 20px;  
+   margin-left: 50px;
+   border-radius: 105px; /* Adjust the value to control the curve radius */
+
+}
+.contact_tile {
+   background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background for tiles */
+   padding: 30px;
+   width: 1330px;
+   height: 300px;
+   box-shadow: 5px 5px 15px rgba(6, 229, 88, 0.3);
+   transition: all 0.4s ease-in-out;
+   flex: 1; /* Allow tiles to grow and shrink equally within the container */
+   margin-top: 25px; /* Add margin to move the tiles down */
+   margin-bottom: 20px;  
+   margin-left: 50px;
+   border-radius: 105px; /* Adjust the value to control the curve radius */
+
 }
 .tile:hover {
        transform: scale(1.2);
