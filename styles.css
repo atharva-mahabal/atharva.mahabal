@@ -82,7 +82,7 @@ nav ul li a:hover {
    background-color: rgba(239, 239, 239, 0.1); /* Semi-transparent background for tiles */
    padding: 30px;
    width: 1330px;
-   height: 800px;
+   height: 400px;
    box-shadow: 5px 5px 15px rgba(6, 229, 88, 0.5);
    transition: all 0.4s ease-in-out;
    flex: 1; /* Allow tiles to grow and shrink equally within the container */
