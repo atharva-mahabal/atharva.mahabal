@@ -58,10 +58,7 @@ nav ul li a:hover {
 
 .container {
    /* Your content styles go here */
-   display: grid; /* Make each container an inline block to stack them horizontally */
-   justify-content: space-between; /* Distribute space between tiles */
    padding: 10px; /* Add padding around the container */
-   gap: 10px; /* Adjust the gap between tiles as needed */
    grid-template-columns: repeat(3, 1fr); /* Create three equal-width columns */
 
 }
